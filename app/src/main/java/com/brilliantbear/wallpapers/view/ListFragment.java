@@ -38,7 +38,7 @@ public class ListFragment extends Fragment implements IView<ResultBean>, OnRefre
     private ListAdapter mAdapter;
     private Context mContext;
     private LinearLayoutManager mLayoutManager;
-    private IPresenter mPresenter;
+    private IPresenter<ResultBean> mPresenter;
     private List<ObjectsBean> objectsBeens;
     private SwipeToLoadLayout mSwipe;
 
@@ -72,6 +72,11 @@ public class ListFragment extends Fragment implements IView<ResultBean>, OnRefre
         mSwipe.setOnLoadMoreListener(this);
 
         mPresenter = new PresenterCompl(mContext, this);
+        ResultBean cache = mPresenter.getCache();
+        if (cache != null && cache.getObjects() != null) {
+            objectsBeens.addAll(cache.getObjects());
+            mAdapter.notifyDataSetChanged();
+        }
 //        mPresenter.getData(0);
         mSwipe.setRefreshing(true);
     }

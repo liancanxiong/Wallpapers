@@ -1,5 +1,10 @@
 package com.brilliantbear.wallpapers.model;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+import android.text.TextUtils;
+
 import com.brilliantbear.wallpapers.bean.ResultBean;
 import com.brilliantbear.wallpapers.net.Net;
 import com.google.gson.Gson;
@@ -44,6 +49,7 @@ public class ModelCompl implements IModel {
                 Gson gson = new Gson();
                 ResultBean resultBean = gson.fromJson(result, ResultBean.class);
                 listener.onSuccess(resultBean);
+
             }
 
             @Override
@@ -52,4 +58,5 @@ public class ModelCompl implements IModel {
             }
         });
     }
+
 }
