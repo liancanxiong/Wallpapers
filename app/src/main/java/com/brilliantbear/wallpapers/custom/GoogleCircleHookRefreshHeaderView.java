@@ -50,6 +50,7 @@ public class GoogleCircleHookRefreshHeaderView extends FrameLayout implements Sw
 
     @Override
     public void onRefresh() {
+        ViewCompat.setAlpha(progressView, 1);
         progressView.start();
     }
 
