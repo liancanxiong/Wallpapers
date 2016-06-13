@@ -1748,6 +1748,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wallpapers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wallpapers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="screenshot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -1774,6 +1788,7 @@
       <recent name="com.brilliantbear.wallpapers.custom" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AndroidProject\Wallpapers\screenshot" />
       <recent name="D:\AndroidProject\Wallpapers\app\src\main\res\values" />
       <recent name="D:\AndroidProject\Wallpapers\app\src\main\res\layout" />
       <recent name="D:\AndroidProject\Wallpapers\app\src\main\java\com\brilliantbear\wallpapers\custom" />
